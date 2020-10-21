@@ -17,5 +17,5 @@ ROUTER_PASSWORD=password ./hyperoptic_tilgin_restart -username=admin -host=http:
 ### Docker
 
 ```shell script
-docker run -e "ROUTER_PASSWORD=password" -p 23465:23465 deathmax/hyperoptic_tilgin_restart -username=admin -host=http://192.168.1.1
+docker run -e "ROUTER_PASSWORD=password" deathmax/hyperoptic_tilgin_restart -username=admin -host=http://192.168.1.1
 ```
