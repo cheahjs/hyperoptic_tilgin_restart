@@ -2,9 +2,10 @@ package main
 
 import (
 	"flag"
-	"github.com/cheahjs/hyperoptic_tilgin_restarter/internal/tilgin"
-	"go.uber.org/zap"
 	"os"
+
+	"github.com/cheahjs/hyperoptic_tilgin_restart/internal/tilgin"
+	"go.uber.org/zap"
 )
 
 func main() {

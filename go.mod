@@ -1,4 +1,4 @@
-module github.com/cheahjs/hyperoptic_tilgin_restarter
+module github.com/cheahjs/hyperoptic_tilgin_restart
 
 go 1.15
 

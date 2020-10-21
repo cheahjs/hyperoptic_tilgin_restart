@@ -4,15 +4,16 @@ import (
 	"crypto/hmac"
 	"crypto/sha1"
 	"encoding/hex"
-	"github.com/pkg/errors"
-	"go.uber.org/zap"
-	"golang.org/x/net/publicsuffix"
 	"io/ioutil"
 	"net/http"
 	"net/http/cookiejar"
 	"net/url"
 	"regexp"
 	"strings"
+
+	"github.com/pkg/errors"
+	"go.uber.org/zap"
+	"golang.org/x/net/publicsuffix"
 )
 
 var (
@@ -35,7 +36,6 @@ func NewRestarter(logger *zap.SugaredLogger, username, password, routerHost stri
 		routerHost: routerHost,
 	}
 }
-
 
 func (s *Restarter) Restart() error {
 	s.logger.Info("Starting restart, fetching secrets")
